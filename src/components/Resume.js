@@ -5,7 +5,7 @@ class Resume extends React.Component {
   render () {
     return (
       <div className="resume">
-          <img src="Resume.png" className="resume-image" />
+          <img role="presentation" src="Resume.png" className="resume-image" />
       </div>
     );
   }

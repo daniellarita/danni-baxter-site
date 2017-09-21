@@ -8,7 +8,7 @@ const About = (props) => {
   return (
     <div className="about">
       <h2>Hi! I'm Danni.</h2>
-      <img className="my-picture" src={picture} />
+      <img role="presentation" className="my-picture" src={picture} />
       <p>I'm {age} and currently live in New York City where I work at WeWork as a Software Engineer in Test. In my free time I enjoy going for runs, doing yoga, eating great food and listening to live music.</p>
       <Music />
     </div>

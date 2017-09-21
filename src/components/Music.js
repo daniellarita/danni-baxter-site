@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 
 class Music extends Component {
   constructor(){
@@ -46,11 +45,11 @@ class Music extends Component {
   render() {
     return (
       <div className="music">
-        <div className = "music-button">
+        <div className="music-button">
           <button
-            onClick = { this.handleSubmit }
-            type = "button"
-            className = "btn btn-default"
+            onClick={ this.handleSubmit }
+            type="button"
+            className="btn btn-default"
           >
             Click here to see one of my favorite songs!
           </button>

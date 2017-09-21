@@ -4,9 +4,8 @@ import App from './App';
 import Resume from './components/Resume';
 import About from './components/About';
 import Contact from './components/Contact';
-import Music from './components/Music';
 import './index.css';
-import { Router, Route, hashHistory, IndexRedirect, Link } from 'react-router';
+import { Router, Route, hashHistory, IndexRedirect } from 'react-router';
 
 ReactDOM.render(
   <Router history={hashHistory}>
