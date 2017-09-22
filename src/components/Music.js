@@ -25,20 +25,29 @@ class Music extends Component {
       ],
       randomIndex: 0,
       uri: 'spotify:track:0NWPxcsf5vdjdiFUI8NgkP',
+      selected: []
     }
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log("button clikced");
-    console.log("tracks length",this.state.tracks.length);
     this.setState({
       randomIndex: Math.floor(Math.random()*this.state.tracks.length)
     })
+    console.log(this.state.randomIndex)
+    // console.log(this.state.selected[this.state.randomIndex])
+    // console.log(this.state.selected.indexOf(this.state.randomIndex))
+    const randIndexAsStr = this.state.selected+'';
+    console.log(randIndexAsStr)
+    if (this.state.selected.indexOf(randIndexAsStr) === -1){
+      this.setState({
+        selected: this.state.selected.push(this.state.randomIndex)
+      })
+      console.log(this.state.selected);
+    }
     this.setState({
       uri: this.state.tracks[this.state.randomIndex]
     })
-    console.log(this.state.randomIndex, "randomIndex")
 
   }
 
